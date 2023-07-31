@@ -1,13 +1,10 @@
 #include "main.h"
-#include <stdarg.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <strings.h>
+
 /***
  *_printf -Produces output accordint to given format
  *@format:Given format
  *Return:Printed characters
- */
+i */
 int _printf(const char *format, ...)
 {
 	int print = 0;
@@ -26,5 +23,6 @@ int _printf(const char *format, ...)
 		}
 		format++;
 	}
+	va_end(argc);
 	return (print);
 }
